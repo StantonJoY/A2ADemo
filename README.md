@@ -1,16 +1,23 @@
-# A2A_demo_project
-A2A实战示例，支持openai、deepseek、qwen的完整的酒店旅行示例
+# A2A_demo_project 项目简介
+
+A2A 代码实战：
+1、支持openai、deepseek、qwen等大模型；
+2、是一个酒店旅行多agent协同的示例代码；
+
+
 
 
 v1.0 版本 
 支持openai、deepseek、qwen等大模型；
-酒店旅行示例;
+
 
 
 作者公众号： AI小新  ， 有问题，可以加群交流[大模型应用交流群]；关注公众号，发送数字2，获取小助手微信，拉你进群；
 
 公众号：
 ![image](images/aixiaoxin.png)
+小助手：
+![image](images/小助手.jpg)
 
 
 
@@ -80,12 +87,14 @@ uv pip install  -r requirements.txt  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 截图：
-![image](images/安装依赖截图.png)
+![image](images/安装依赖截图1.png)
 
 
 
 # 配置 .env 文件，填入 deepseek的apikey
 
+.env截图：
+![image](images/env截图.png)
 
 
 
