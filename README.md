@@ -69,7 +69,6 @@ source .venv/bin/activate
 # uv 安装对应的依赖包
 ```bash
 # 进入代码目录
-cd travel_planner
 
 # 利用uv 安装依赖包
 uv pip install  -r requirements.txt  -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
@@ -80,7 +79,7 @@ uv pip install  -r requirements.txt  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 截图：
-![image](images/安装环境的截图.jpg)
+![image](images/安装依赖截图.png)
 
 
 
