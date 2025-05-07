@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # LiteLLM uses different ENV variables for OpenAI and OpenTelemetry fields.
-# os.environ["OPENAI_API_BASE"] = os.getenv("OPENAI_API_BASE")
-# os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_BASE"] = os.getenv("OPENAI_API_BASE")
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
-openai_model = LiteLlm(model="openai/gpt-3.5-turbo")
+openai_model = LiteLlm(model="openai/deepseek-chat")
 
 plan_agent = LlmAgent(
     name="plan_agent",

@@ -1,18 +1,17 @@
-from google.adk import Agent
-from google.adk.agents import LlmAgent
-from google.adk.models.lite_llm import LiteLlm
 import os
 
 from dotenv import load_dotenv
+from google.adk.agents import LlmAgent
+from google.adk.models.lite_llm import LiteLlm
 
 # 加载 .env 文件
 load_dotenv()
 
 # LiteLLM uses different ENV variables for OpenAI and OpenTelemetry fields.
-# os.environ["OPENAI_API_BASE"] = os.getenv("OPENAI_API_BASE")
-# os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_BASE"] = os.getenv("OPENAI_API_BASE")
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
-openai_model = LiteLlm(model="openai/gpt-3.5-turbo")
+openai_model = LiteLlm(model="openai/deepseek-chat")
 
 design_agent = LlmAgent(
     name="design_agent",
